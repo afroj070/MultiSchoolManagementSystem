@@ -1,0 +1,3 @@
+dashboard:
+    path: /
+    controller: SchoolManagementSystem\Controller\DefaultController::index
