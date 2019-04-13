@@ -1,0 +1,35 @@
+SchoolManagementSystem\Entity\Users:
+    type: entity
+    table: null
+    repositoryClass: SchoolManagementSystem\Repository\UsersRepository
+    manyToOne:
+        role:
+            targetEntity: SchoolManagementSystem\Entity\Roles
+            inversedBy: Users
+            joinColumn:
+                nullable: false
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        email:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+        token:
+            type: string
+            length: 255
+            nullable: true
+        active:
+            type: string
+            length: 255
+        createdAt:
+            type: datetime
+        updatedAt:
+            type: datetime
+    lifecycleCallbacks: {  }

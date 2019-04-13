@@ -1,0 +1,25 @@
+SchoolManagementSystem\Entity\Roles:
+    type: entity
+    table: null
+    repositoryClass: SchoolManagementSystem\Repository\RolesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+        code:
+            type: string
+            length: 255
+        active:
+            type: string
+            length: '10'
+        createdAt:
+            type: datetime
+        updatedAt:
+            type: datetime
+    lifecycleCallbacks: {  }
